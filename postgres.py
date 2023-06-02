@@ -45,5 +45,5 @@ def transform(df):
     
 
 df1=transform(extract(df))
-df1.to_sql(name='db_name3',con=db.engine,if_exists='append',index=False) 
+df1.to_sql(name='db_name3',con=db.engine,if_exists='replace',index=False) 
 
